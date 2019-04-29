@@ -1,17 +1,22 @@
 function multiplyBy10 (array) {
- // your code here
+ const newArray = array.map(x => x * 10);
+ return newArray;
 };
 
 function shiftRight (array) {
- // your code here
+ let lastElement = array.pop();
+ array.unshift(lastElement);
+ return array;
 };
 
 function onlyVowels (array) {
- // your code here
+  const newArray = array.map(x => x.replace(/[^aeiou]/ig, ""));
+  return newArray;
 };
 
 function doubleMatrix (array) {
- // your code here
+  const newArray = array.map(x => x.map(y => y * 2));
+  return newArray;
 };
 
 module.exports = {
